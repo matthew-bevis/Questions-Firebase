@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">21QuestionsFirebase</string>
+    <string name="helpPrompt">Select ASK QUESTION to receive a random question,
+        or select ADD QUESTION to add a question to the database.
+        Select CLEAR PROMPT to remove the question.</string>
+    <string name="ask_question">Ask Question</string>
+    <string name="add_question">Add Question</string>
+    <string name="clear_prompt">Clear Prompt</string>
+    <string name="questionDB">Type in a question and select ADD QUESTION to submit
+        to the database, or select ASK QUESTION to return to receiving questions.
+        Select CLEAR DATABASE to delete ALL entries in the database… This is
+        irreversible.</string>
+</resources>

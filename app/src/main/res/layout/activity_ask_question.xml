@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskQuestion">
+
+    <Button
+        android:id="@+id/addQ_act1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/add_question"
+        app:layout_constraintBottom_toTopOf="@+id/clearQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/askQ_act1"
+        app:layout_constraintTop_toBottomOf="@+id/q"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/askQ_act1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/ask_question"
+        app:layout_constraintBottom_toTopOf="@+id/clearQ"
+        app:layout_constraintEnd_toStartOf="@+id/addQ_act1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q" />
+
+    <TextView
+        android:id="@+id/q"
+        android:layout_width="360dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/helpPrompt"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/addQ_act1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clearQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#FFC107"
+        android:text="@string/clear_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/askQ_act1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
